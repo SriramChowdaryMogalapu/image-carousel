@@ -5,6 +5,7 @@ import Footer from "./Components/Footer";
 import Carousel from "./Components/Carousel";
 import About from "./Components/About";
 import Help from "./Components/Help";
+import Bot from "./Components/Bot";
 
 const App = () => {
   const [activeTab, setActiveTab] = useState("home");
@@ -23,6 +24,9 @@ const App = () => {
       <Header setActiveTab={setActiveTab} />
       <main className="main">{content}</main>
       <Footer />
+      <div className="bot">
+         <Bot />
+      </div>
     </div>
   );
 };
